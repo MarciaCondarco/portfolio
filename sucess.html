@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
 <head>
+        <!-- Servidores de Fontes do Google -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags essenciais -->
     <meta name="author" content="Marcia Gisseli Condarco">
     <meta name="description" content="Portfolio de Marcia Gisseli Condarco, desenvolvedora fullstack">
     <meta name="robots" content="index, follow"> 
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+    <!-- link para o css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio da Marcia Gisseli</title>
 </head>
 <body>
@@ -20,21 +30,29 @@
 
             <nav>
                 <ul class="flex menu_list">
-                    <li><a href="#hero">Portifolio</a></li>
-                    <li><a href="#contact">Inicio de Contato</a></li>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </article>
     </header>
+    <!-- hero -->
     <main>
-        <article>
-            <img src="./assets/img/sucess.svg" alt="imagem de sinal correta">
-            <h1>E-mail enviado com sucesso!</h1>
-            <p>Obrigado por entrar em contato!</p>
-            <p>Logo mais retornarei a sua mensagem </p>
-            <a href="./index.html">Voltar para o inicio</a>
+        <article id="sucesso" class="sucesso_container">
+            <article class="sucesso_content">
+                <figure class="sucesso_image">
+                    <img src="./assets/img/sucess.svg" alt="imagem de sinal correta">
+                </figure>
+                <h1>E-mail enviado com sucesso!</h1>
+                <p>Obrigado por entrar em contato!</p>
+                <p>Logo mais retornarei a sua mensagem </p>
+                <a href="./index.html#hero">Voltar para o inicio</a>
+            </article>
         </article>
     </main>
-    Feito com ❤️ por Marcia Condarco - 2025
 </body>
+    <footer>
+        Feito com ❤️ por Marcia Condarco - 2025
+    </footer>
 </html>
