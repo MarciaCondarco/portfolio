@@ -37,7 +37,8 @@ async function getApiGithub(){
             <article class="about_content">
 
                 <h2>Sobre mim</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio. Interagi no mé, cursus quis, vehicula ac nisi. Pellentesque nec nulla ligula. Donec gravida turpis a vulputate ultricies. In elementis mé pra quem é amistosis quis leo.</p>
+                <p>Sou desenvolvedora FullStack, mulher na tecnologia, também gosto de estudar sobre cibersegurança, valorizo o bem-estar e isso realizo hobbies, como caminhar e desenhar, a minha frase favorita é "nunca é tarde para começar algo novo", minha cor favorita é o vinho, eu prefiro ações do que palavras. 
+                <br>Você conheceu um pouquinho sobre mim.</p>
 
                 <div class="about_stats">
                     <a href="${perfilJson.html_url}" target="_blank" class="botao">Ver GitHub</a>

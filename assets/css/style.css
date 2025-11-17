@@ -45,8 +45,9 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--black-800);
-    color: #FC608F;
+    background: linear-gradient(135deg, #F5F5DC, #F5F5DC);
+    /* background: linear-gradient(135deg, #0b0b0b, #881919); */
+    color: #300F0F;
 }
 
 main{
@@ -73,23 +74,24 @@ button{
 .botao{
     border: none;
     color: var(--white);
-    background-color: #E05F77;
+    background-color: #300F0F;
+
 }
 
 .botao:hover {
-    background-color: #E05F77;
-    box-shadow: #DE9BA9;
+    background-color: #783939;
+    box-shadow: #0e0a0a;
     transform: translateY(-0.25rem);
 }
 
 .botao-outline{
-    border: 0.25rem solid #DE9BA9;
-    color: #E05F77;
+    border: 0.25rem solid #783939;
+    color: #783939;
     background-color: transparent;
 }
 
 .botao-outline:hover {
-    background-color: #DE9BA9;
+    background-color: #300F0F;
     color: var(--white);
     box-shadow: #E05F77;
     transform: translateY(-0.25rem);
@@ -102,8 +104,9 @@ button{
     top: 0;
     width: 100%;
     height: 5rem;
-    background-color: #FC608F;
-    border-bottom: 0.5rem solid #F28AA0;
+    background-color: #783939;
+    border-bottom: 0.5rem solid #a05c5c;
+    
     box-shadow: var(--shadow-sm);
     z-index: 1000;
 }
@@ -116,6 +119,7 @@ button{
     height: 100%;
     padding: 0 1.5rem;
     margin: 0 auto;
+    color: white;
 }
 
 .menu_container a{
@@ -172,20 +176,20 @@ button{
 .hero_content h4 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--white);
+    color: var(--black-800);
 }
 
 .hero_content h1 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 3.5rem;
-    color: var(--white);
+    color: var(--black-800);
 }
 
 .hero_content p {
     font-size: 1.25rem;
     line-height: 1.75rem;
-    color: var(--gray-400);
+    color: var(--black-800);
 }
 
 .hero_buttons {
@@ -199,6 +203,9 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.hero_image img{
+    width: 300px;
 }
 
 .ilustracao {
@@ -230,7 +237,7 @@ button{
     display: flex;
     align-items: center;
     gap: 4rem;
-    background-color: #F28AA0;
+    background-color: #300F0F;
     border-radius: 1rem;
 }
 
@@ -242,7 +249,7 @@ button{
     width: 100%;
     border: 0.35rem solid var(--white);
     border-radius: 50%;
-    box-shadow: var(--shadow-lg);
+    box-shadow: #F5F5DC;
 }
 
 .about_content h2 {
@@ -256,7 +263,7 @@ button{
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: justify;
-    color: var(--gray-400);
+    color: var(--gray-200);
     margin-bottom: 1rem;
 }
 
@@ -286,13 +293,13 @@ button{
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    color: var(--black-800);
+    color: var(--white);
     margin-bottom: 0;
 }
 
 .stats-wrapper .stat-label {
     font-size: 0.75rem;
-    color: var(--gray-400);
+    color: var(--gray-200);
     text-align: center;
     margin-bottom: 0;
 }
@@ -310,7 +317,7 @@ button{
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #E05F77;
+    color: #300F0F;
 }
 
 .contact_info p{
@@ -322,6 +329,7 @@ button{
 
 .social_container{
     display: flex;
+    justify-content: center;
     gap: 3rem;
 }
 
@@ -329,25 +337,24 @@ button{
     width: 4rem;
     height: 4rem;
     padding: 0.75rem;
-    background-color: var(--black-800);
+    background-color: #F5F5DC;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
 }
 
 .social_icon:hover{
-    background-color: #F7A3B4;
+    background-color: #300F0F;
     transform: translateY(-0.25rem);
     box-shadow: #E05F77;
 }
 
 .social_icon img{
     width: 100%;
-    filter: brightness(0) invert(100%);
-    /* filter: brightness(0) saturate(100%); */
+    filter: brightness(0) saturate(100%);
 }
 
 .social_icon:hover img{
-    filter: brightness(0) saturate(100%);
+    filter: brightness(0) invert(100%);
 }
 
 /* === FORM === */
@@ -458,7 +465,7 @@ footer{
     padding: 2.5rem;
     font-weight: 600;
     text-align: center;
-    background: linear-gradient(to right top,#E05F77, #E0537D);
+    background-color: #300F0F;
     color: var(--white);
     margin-top: auto;
 }
@@ -750,23 +757,34 @@ h1, p, a, img{
 
 .projeto_container{
     display: grid;
-    grid-template-columns:1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3rem;
     border-radius: 8px;
     font-size: 1.5rem;
     padding: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .projeto {
     display: grid;
+    grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
     border: 1px solid var(--black-800);
-    gap: 3rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    gap: 6px;
 }
 .projeto p{
-    color:var(--white)
+    color:var(--black-800);
+}
+.projeto h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .foto_card{
     width: 250px;
@@ -776,6 +794,14 @@ h1, p, a, img{
     display:flex;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 3px;
+    padding: 3px;
+}
+.imagem_Tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4px;
+    color: #300F0F;
 }
 
 .botao_card{
@@ -784,16 +810,17 @@ h1, p, a, img{
     justify-content: center;
     border-radius: 10px;
     border: 0.25rem solid transparent;
-    background-color: #C11C84;
+    background-color: #300F0F;
     color: var(--white);
     box-shadow: #E05F77;
-    transform: translateY(-0.25rem);
     padding: 0.75rem;
-    }
+}
 
 .botao_card:hover{
-    border: 0.25rem solid #C11C84;
+    border: 0.25rem solid #300F0F;
     box-shadow: #E05F77;
+    color: #0e0a0a;
     background-color: transparent;
-    line-height: 1.5rem;
+    /* line-height: 1.5rem; */
+    transform: translateY(-0.25rem);
 }
