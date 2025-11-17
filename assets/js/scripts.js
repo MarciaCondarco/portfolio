@@ -2,6 +2,7 @@
 
 const about = document.querySelector('#about');
 
+const projetos = document.querySelector('#projetos')
 //selecionar o formulario
 const formulario = document.querySelector('#formulario');
 
@@ -119,3 +120,132 @@ formulario.addEventListener('submit', function(event){
 // Chamar a função getAPIGithub()
 
 getApiGithub();
+
+
+async function card(){
+    try{
+        let conteudoCard = `
+        
+            <!-- CARD-1 -->
+                <div class="projeto projeto1">
+                    <div class="">
+                        <figure>
+                            <img src="https://ik.imagekit.io/xmqgsi96x8/Copilot_20251116_230356.png" alt="" class="foto_card">
+                            <figcaption>
+                                <h3>Farmacia VIDA</h3>
+                                <div class="imagem_Tech">
+
+                                    <div>
+                                        <p>JAVA</p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            REACT
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>MYSQL</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="botao_container">
+                        <a href="https://github.com/MarciaCondarco/FarmaciaVida" target="_blank" class="botao_card">Acessar Projeto</a>
+                        <!-- <a href="#" class="botao_card">Acessar Github</a> -->
+                    </div>
+                </div>
+            <!-- CARD-2 -->
+                <div class="projeto projeto1">
+                    <div class="">
+                        <figure>
+                            <img src="https://ik.imagekit.io/xmqgsi96x8/Copilot_20251116_231144.png" alt="" class="foto_card">
+                            <figcaption>
+                                <h3>Previsão Tempo</h3>
+                                    <div class="imagem_Tech">
+
+                                        <div>
+                                            <p>JavaScript</p>
+                                        </div><br>
+                                        <div>
+                                            <p>
+                                                API
+                                            </p>
+                                        </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="botao_container">
+                        <a href="https://github.com/MarciaCondarco/projeto_clima" target="_blank" class="botao_card">Acessar Projeto</a>
+                        <!-- <a href="#" class="botao_card">Acessar Github</a> -->
+                    </div>
+                </div>
+            <!-- CARD-2 -->
+                <div class="projeto projeto1">
+                    <div class="">
+                        <figure>
+                            <img src="https://ik.imagekit.io/xmqgsi96x8/Copilot_20251116_233249.png" alt="ilustracao de um banco" class="foto_card">
+                            <figcaption>
+                                <h3>Sistema Bancario</h3>
+                                    <div class="imagem_Tech">
+
+                                        <div>
+                                            <p>JAVA</p>
+                                        </div><BR>
+                                        <div>
+                                            <p>
+                                                SPRINTBOOT
+                                            </p>
+                                        </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="botao_container">
+                        <a href="https://github.com/MarciaCondarco/conta_bancaria" target="_blank" class="botao_card">Acessar Projeto</a>
+                        <!-- <a href="#" class="botao_card">Acessar Github</a> -->
+                    </div>
+                </div>
+            <!-- CARD-2 -->
+                <div class="projeto projeto1">
+                    <div class="">
+                        <figure>
+                            <img src="https://ik.imagekit.io/xmqgsi96x8/Copilot_20251116_234302.png" alt="ilustracao de blog pessoal" class="foto_card">
+                            <figcaption>
+                                <h3>Blog Pessoal</h3>
+                                    <div class="imagem_Tech">
+
+                                        <div>
+                                            <p>JAVA</p>
+                                        </div><BR>
+                                        <div>
+                                            <p>
+                                                SPRINTBOOT
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>React</p>
+                                        </div><br>
+                                        <div>
+                                            <p>MYSQL</p>
+                                        </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="botao_container">
+                        <a href="https://github.com/MarciaCondarco/blogpessoal_spring_t83" target="_blank" class="botao_card">Acessar Projeto</a>
+                        <!-- <a href="#" class="botao_card">Acessar Github</a> -->
+                    </div>
+                </div>
+
+        `
+        projetos.innerHTML += conteudoCard;
+
+    }catch(error){
+        console.error(error)
+    }
+
+}
+card();
